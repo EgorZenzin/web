@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Second lab</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Вторая лабораторная работа</div>
+        <div class="navigation">
+            <ul><a href="first.html">Первая страница</a></ul>
+            <ul><a href="second.html">Вторая страница</a></ul>
+            <ul><a href="third.html">Третья страница</a></ul>
+            <ul><a href="fourth.html">Четвертая страница</a></ul>
+        </div>
+        <div class="content">
+            <h2>Вход на сайт</h2>
+            <form>
+                <fieldset>
+                    <legend>Введите данные:</legend>
+                    <label for="login">Логин:</label>
+                    <input id="login" type="text" autofocus required placeholder="Например: web"/>
+                    <label for="password">Пароль:</label>
+                    <input id="password" type="password" required placeholder="Например: qwerty"/>
+                    <label for="age">Возраст:</label>
+                    <input type="number" min="1" max="120" id="age" required/>
+                    <label for="sex" class="pls">Выберите ваш пол:</label>
+                    <input type="text" list="sexes" id="sex" name="sex" required>
+                    <datalist id="sexes">
+                      <option value="Мужской">
+                      <option value="Женский">
+                    </datalist> 
+                    <label for="date">Уникальный ID</label>
+                    <input type="text" value="1887234" readonly="readonly" id="text">                 
+                    <input type="submit" value="Войти"/>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
